@@ -20,24 +20,41 @@ html, body {
   z-index: -1;
 }
 
-/* color overlay */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(60, 47, 47, 0.5);
-  z-index: 0;
-  pointer-events: none; /* don’t block clicks */
-}
-
 header, main {
   position: relative;
 }
 
 main {
   padding-top: 58px;
+}
+
+#home, #about-us, #giveaway, #contact-us {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#home .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(60, 47, 47, 0.5);
+  z-index: 1;
+}
+
+#home > * {
+  position: relative;
+  z-index: 2;
+}
+
+#about-us > * {
+  position: relative;
+  z-index: 2;
+}
+
+#giveaway > * {
+  position: relative;
+  z-index: 2;
 }
 
 nav {
@@ -74,7 +91,6 @@ nav a:hover {
     width: 48px;
     cursor: pointer;
     padding: 5px;
-    
 }
 
 /* hamburger icon */
@@ -186,26 +202,140 @@ nav a:hover {
 
 .giveaway-container {
   background-color: #3C2F2F;
-  height: 480px;
+}
+
+.giveaway-images {
+  display: flex;
+  height: calc(100vh - 500px);
+}
+
+.giveaway-images img {
+  width: 50%;
+  object-fit: cover;
 }
 
 .sign-up-container {
   padding: 40px;
 }
 
+#contact-us {
+  background-color: #3C2F2F;
+}
+
 .contact-us-title {
   color: white;
   font-size: 32px;
-  padding-top: 36px; 
+  padding-top: 36px;
+}
+
+.location-container h1,
+.location-container h2, iframe {
+  position: relative;
+  z-index: 2;
 }
 
 .contact-us-subtitle {
   color: white;
-  font-size: 18px;
+  font-size: 24px;
   padding: 50px 50px 100px 50px;
   margin: 50px;
 }
 
+.location-container .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(60, 47, 47, 0.5);
+  z-index: 1;
+}
+
 .location-container {
-  background-color: #3C2F2F;
+  position: relative; /* <— important */
+  background: url("/assets/images/location-img.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 488px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  overflow: hidden; /* keeps overlay inside */
+}
+
+footer {
+  height: 315px;
+}
+
+.center-wrap-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%; 
+}
+
+/* giveaway */
+
+.signup-form {
+  background-color: #5C6159;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  max-width: 300px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.signup-form h2 {
+  margin-top: 0;
+}
+
+.signup-form p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
+.input-wrapper .icon {
+  font-size: 18px;
+  margin-right: 8px;
+  color: #555;
+}
+
+.input-wrapper input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+.subscribe-btn {
+  display: inline-block;
+  background-color: #777;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 3px 0 rgba(0,0,0,0.3);
+}
+
+.subscribe-btn:hover {
+  background-color: #666;
 }
