@@ -8,14 +8,6 @@ html, body {
   overflow-x: hidden;
 }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  background: url("/assets/images/home-background.png") no-repeat center center;
-  background-size: contain;
-  background-color: #000;
-}
-
 .bg {
   position: fixed;
   top: 55%;
@@ -36,19 +28,22 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(60, 47, 47, 0.5);
-  z-index: 1;
+  z-index: 0;
   pointer-events: none; /* don’t block clicks */
 }
 
 header, main {
   position: relative;
-  z-index: 2; /* keep content above the overlay */
+}
+
+main {
+  padding-top: 58px;
 }
 
 nav {
     background-color: #3C2F2F;
     height: 58px;
-    position: sticky;
+    position: fixed;
     display: flex;
     align-items: center;
     z-index: 1000;
@@ -123,8 +118,8 @@ nav a:hover {
 .open-hours-sign {
   display: flex;
   justify-content: center;
-  height: 100vh;
   padding-top: 90px;
+  padding-bottom: 270px;
 }
 
 .open-sign {
@@ -154,4 +149,62 @@ nav a:hover {
 .open-sign p {
     margin: 5px 0;
     font-size: 1.1em;
+}
+
+/* About us */
+.aboutus-title {
+  background-color: white;
+  padding: 30px;
+  font-size: 32px;
+  margin: 0px;
+}
+
+.about-us-card-container {
+  background-color: #3C2F2F;
+  height: 415px;
+}
+
+.about-us-gallery {
+  background-color: #fff;
+  height: 220px;
+}
+
+.giveaway-title {
+  color: white;
+  padding: 30px;
+  font-size: 32px;
+  margin: 0px;
+}
+
+.giveaway-text {
+  color: white;
+  padding: 0 30px;
+  font-size: 18px;
+  margin: 0px;
+}
+
+.giveaway-container {
+  background-color: #3C2F2F;
+  height: 480px;
+}
+
+.sign-up-container {
+  padding: 40px;
+}
+
+.contact-us-title {
+  color: white;
+  font-size: 32px;
+  padding-top: 36px; 
+}
+
+.contact-us-subtitle {
+  color: white;
+  font-size: 18px;
+  padding: 50px 50px 100px 50px;
+  margin: 50px;
+}
+
+.location-container {
+  background-color: #3C2F2F;
 }
