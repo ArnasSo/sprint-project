@@ -37,7 +37,7 @@ header, main {
 }
 
 main {
-  padding-top: 58px;
+  padding-top: 37px;
 }
 
 nav {
@@ -208,4 +208,29 @@ nav a:hover {
 
 .location-container {
   background-color: #3C2F2F;
+}
+
+h1, p {
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  color: white;
+}
+
+ul {
+  margin-left: 15%;
+  margin-right: 15%;
+  list-style-position: inside;
+  text-align: left;
+}
+
+li {
+  margin-bottom: 5px;
+  text-align: left;
+  color: white;
+}
+main section {
+  background-color: #2B2727;
+  padding-top: 25px;
+  min-height: calc(100vh - 62px);
 }
