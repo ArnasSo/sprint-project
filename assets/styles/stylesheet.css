@@ -7,8 +7,11 @@ body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
-  font-family: "Limelight", sans-serif;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
+
 }
 
 .bg {
@@ -197,9 +200,6 @@ nav a:hover {
 .open-sign h1 {
   font-size: 2em;
   font-weight: bold;
-  font-family: "Lexend Deca", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
 
 }
 
@@ -249,10 +249,6 @@ nav a:hover {
   padding: 0 30px;
   font-size: 18px;
   margin: 0px;
-  font-family: "Lexend Deca", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-
 }
 
 .giveaway-container {
@@ -352,9 +348,6 @@ footer {
 .signup-form p {
   font-size: 14px;
   margin-bottom: 20px;
-  font-family: "Lexend Deca", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
 
 }
 
@@ -395,15 +388,14 @@ footer {
   padding: 10px 20px;
   cursor: pointer;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
-  font-family: "Lexend Deca", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
 }
 
 input {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
+
 }
 
 .subscribe-btn:hover {
@@ -452,10 +444,6 @@ input {
   margin: 0;
   font-size: 0.95rem;
   color: #666;
-  font-family: "Lexend Deca", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-
 }
 
 /* Mobile: make cards smaller */
