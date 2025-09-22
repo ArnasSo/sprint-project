@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="assets/styles/stylesheet.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
     <title>Beanster Bakery</title>
 </head>
+
 <body>
     <img src="assets/images/home-background.png" alt="" class="bg">
-    
+
 
     <header id="home-nav">
         <nav>
@@ -32,23 +36,23 @@
     </header>
 
     <main>
-    <!-- Home -->
+        <!-- Home -->
         <section id="home">
             <div class="overlay"></div>
             <div class="center-wrap">
-            <h1 class="homepage-title">Artisan Bakery</h1>
-            <figure class="home-page-center-logo">
-                <img src="assets/images/main-logo.png" alt="">
-            </figure>
+                <h1 class="homepage-title">Artisan Bakery</h1>
+                <figure class="home-page-center-logo">
+                    <img src="assets/images/main-logo.png" alt="">
+                </figure>
             </div>
 
             <div class="open-hours-sign">
-            <div class="open-sign">
-                <h2>OPEN</h2>
-                <div class="divider"></div>
-                <p>MONDAY - SUNDAY</p>
-                <p>7:00 - 19:00</p>
-            </div>
+                <div class="open-sign">
+                    <h2>OPEN</h2>
+                    <div class="divider"></div>
+                    <p>MONDAY - SUNDAY</p>
+                    <p>7:00 - 19:00</p>
+                </div>
             </div>
         </section>
 
@@ -58,7 +62,23 @@
                 <h1 class="aboutus-title">Beanster Baker</h1>
             </div>
             <article class="about-us-card-container">
-                Cards go here
+                <div class="slider">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x180" alt="Card 1">
+                        <h3>Who are we?</h3>
+                        <p>We are a local artisan bakery, that specializes in sourdough, fresh baked good and delicious coffee</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x180" alt="Card 1">
+                        <h3>Who are we?</h3>
+                        <p>We are a local artisan bakery, that specializes in sourdough, fresh baked good and delicious coffee</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x180" alt="Card 1">
+                        <h3>Who are we?</h3>
+                        <p>We are a local artisan bakery, that specializes in sourdough, fresh baked good and delicious coffee</p>
+                    </div>
+                </div>
             </article>
             <article class="about-us-gallery">
                 Images go here
@@ -66,40 +86,40 @@
         </section>
         <!-- Giveaway -->
         <section id="giveaway">
-        <div class="center-wrap giveaway-container">
-            <h1 class="giveaway-title">Kokurance Tid</h1>
-            <p class="giveaway-text">Participate and follow us for a chance to win a brunch plate every Monday!</p>
-            
-            <article class="sign-up-container">
-            <form class="signup-form" action="#" method="post">
-                <h2>Sign Up Form</h2>
-                <p>Simply enter your e-mail below and you are done!</p>
+            <div class="center-wrap giveaway-container">
+                <h1 class="giveaway-title">Kokurance Tid</h1>
+                <p class="giveaway-text">Participate and follow us for a chance to win a brunch plate every Monday!</p>
 
-                <div class="form-group">
-                <label for="name">Name</label>
-                <div class="input-wrapper">
-                    <span class="icon">👤</span>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                </div>
-                </div>
+                <article class="sign-up-container">
+                    <form class="signup-form" action="#" method="post">
+                        <h2>Sign Up Form</h2>
+                        <p>Simply enter your e-mail below and you are done!</p>
 
-                <div class="form-group">
-                <label for="email">E-Mail</label>
-                <div class="input-wrapper">
-                    <span class="icon">@</span>
-                    <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
-                </div>
-                </div>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <div class="input-wrapper">
+                                <span class="icon">👤</span>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                        </div>
 
-                <button type="submit" class="subscribe-btn">Subscribe</button>
-            </form>
+                        <div class="form-group">
+                            <label for="email">E-Mail</label>
+                            <div class="input-wrapper">
+                                <span class="icon">@</span>
+                                <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="subscribe-btn">Subscribe</button>
+                    </form>
+                </article>
+            </div>
+
+            <article class="giveaway-images">
+                <img src="assets/images/giveaway-img1.jpg" alt="Bakery storefront">
+                <img src="assets/images/giveaway-img2.png" alt="Freshly baked bread">
             </article>
-        </div>
-
-        <article class="giveaway-images">
-            <img src="assets/images/giveaway-img1.jpg" alt="Bakery storefront">
-            <img src="assets/images/giveaway-img2.png" alt="Freshly baked bread">
-        </article>
         </section>
         <!-- Contact Us -->
         <section id="contact-us">
@@ -108,20 +128,17 @@
                 <h1 class="contact-us-title">Location</h1>
                 <h2 class="contact-us-subtitle">Sankt Clemens Stræde 7, 8000 Aarhus</h2>
             </div>
-        <footer>
-            <div class="center-wrap-footer">
-                <iframe
-                src="https://www.google.com/maps?q=Sankt+Clemens+Str%C3%A6de+7,+8000+Aarhus&z=15&output=embed"
-                width="240"
-                height="240"
-                style="border:0;border-radius:10px;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </footer>
+            <footer>
+                <div class="center-wrap-footer">
+                    <iframe
+                        src="https://www.google.com/maps?q=Sankt+Clemens+Str%C3%A6de+7,+8000+Aarhus&z=15&output=embed"
+                        width="240" height="240" style="border:0;border-radius:10px;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </footer>
         </section>
     </main>
 </body>
+
 </html>
