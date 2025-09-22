@@ -178,7 +178,7 @@ nav a:hover {
 
 .about-us-card-container {
   background-color: #3C2F2F;
-  height: 415px;
+  padding: 50px 0 50px 50px;
 }
 
 .about-us-gallery {
@@ -233,7 +233,8 @@ nav a:hover {
 }
 
 .location-container h1,
-.location-container h2, iframe {
+.location-container h2,
+iframe {
   position: relative;
   z-index: 2;
 }
@@ -247,14 +248,17 @@ nav a:hover {
 
 .location-container .overlay {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(60, 47, 47, 0.5);
   z-index: 1;
 }
 
 .location-container {
-  position: relative; /* <— important */
+  position: relative;
+  /* <— important */
   background: url("/assets/images/location-img.jpg") no-repeat center center;
   background-size: cover;
   min-height: 488px;
@@ -265,7 +269,8 @@ nav a:hover {
   text-align: center;
   color: white;
   padding: 2rem;
-  overflow: hidden; /* keeps overlay inside */
+  overflow: hidden;
+  /* keeps overlay inside */
 }
 
 footer {
@@ -289,7 +294,7 @@ footer {
   color: white;
   max-width: 300px;
   margin: 0 auto;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .signup-form h2 {
@@ -337,17 +342,61 @@ footer {
   border-radius: 8px;
   padding: 10px 20px;
   cursor: pointer;
-  box-shadow: 0 3px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
 }
 
 .subscribe-btn:hover {
   background-color: #666;
 }
 
+<<<<<<< HEAD
 .about-us-gallery img {
   height: 40%;
   width: 40%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 10px;
+=======
+.slider {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1rem;
+}
+
+.card {
+  flex: 0 0 300px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  padding: 1rem;
+  scroll-snap-align: start;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  min-height: 310px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Mobile: make cards smaller */
+@media (max-width: 768px) {
+  .card {
+    flex: 0 0 80%;
+  }
+>>>>>>> 80034487d3625498df0ef5c9aa0eaf5e541757f1
 }
