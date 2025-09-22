@@ -8,7 +8,6 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
@@ -247,7 +246,6 @@ nav a:hover {
   font-size: 1.125rem;
   margin: 0px;
   font-family: "Lexend Deca", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
 }
 
@@ -277,7 +275,6 @@ h3.privacy-policy {
   cursor: pointer;
   color: white;
   font-family: "Lexend Deca", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
 }
 
@@ -415,7 +412,6 @@ footer {
 
 input {
   font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }

@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="assets/styles/stylesheet.css">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
-    
     <title>Beanster Bakery</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,18 +17,20 @@
 <body>
     <img src="assets/images/home-background.png" alt="" class="bg">
 
-
+    <!-- Nav -->
     <header id="home-nav">
         <nav>
             <a href="#home" class="nav-icon">
                 <img src="assets/images/main-logo.png" alt="Logo">
             </a>
+            <!-- Mobile Nav -->
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
 
+            <!-- Desktop Nav -->
             <ul class="menu" id="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about-us">About Us</a></li>
@@ -102,6 +103,7 @@
                 <img src="assets/images/bar.jpg" alt="Baker preparing dough">
             </div>
         </section>
+
         <!-- Giveaway -->
         <section id="giveaway">
             <div class="center-wrap giveaway-container">
@@ -170,13 +172,11 @@
         const hamburger = document.getElementById("hamburger");
         const menu = document.getElementById("menu");
         const menuLinks = document.querySelectorAll(".menu a");
-
         // Toggle burger menu
         hamburger.addEventListener("click", () => {
             hamburger.classList.toggle("active");
             menu.classList.toggle("show");
         });
-
         // Close burger menu when clicking on any menu item
         menuLinks.forEach(link => {
             link.addEventListener("click", () => {
