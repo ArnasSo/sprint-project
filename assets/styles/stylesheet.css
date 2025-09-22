@@ -356,14 +356,14 @@ footer {
   background-color: #666;
 }
 
-<<<<<<< HEAD
 .about-us-gallery img {
   height: 40%;
   width: 40%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 10px;
-=======
+}
+
 .slider {
   display: flex;
   gap: 1rem;
@@ -405,5 +405,4 @@ footer {
   .card {
     flex: 0 0 80%;
   }
->>>>>>> 80034487d3625498df0ef5c9aa0eaf5e541757f1
 }
