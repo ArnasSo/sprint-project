@@ -464,3 +464,43 @@ input {
     flex: 0 0 80%;
   }
 }
+
+/* Privacy Policy Page Styles */
+.privacy-page h1, 
+.privacy-page p {
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  color: white;
+}
+
+.privacy-page ul {
+  margin-left: 15%;
+  margin-right: 15%;
+  list-style-position: inside;
+  text-align: left;
+}
+
+.privacy-page li {
+  margin-bottom: 5px;
+  text-align: left;
+  color: white;
+}
+
+.privacy-page main section {
+  background-color: #2B2727;
+  padding-top: 25px;
+  min-height: calc(100vh - 62px);
+}
+
+/* Enhanced overlay for privacy page */
+.overlay.privacy-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(60, 47, 47, 0.5);
+  z-index: 0;
+  pointer-events: none; /* don't block clicks */
+}
