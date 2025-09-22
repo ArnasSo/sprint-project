@@ -190,8 +190,7 @@ nav a:hover {
 
 .about-us-gallery {
   background-color: #fff;
-  min-width: 2;
-  min-height: 200px;
+  flex: 1;
   display: flex;
   align-items: center;
   gap: 20%;
@@ -266,7 +265,6 @@ iframe {
 
 .location-container {
   position: relative;
-  /* <— important */
   background: url("/assets/images/location-img.jpg") no-repeat center center;
   background-size: cover;
   min-height: 488px;
@@ -278,7 +276,6 @@ iframe {
   color: white;
   padding: 2rem;
   overflow: hidden;
-  /* keeps overlay inside */
 }
 
 footer {
