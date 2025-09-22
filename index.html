@@ -26,13 +26,13 @@
             <a href="#home" class="nav-icon">
                 <img src="assets/images/main-logo.png" alt="Logo" />
             </a>
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
 
-            <ul class="menu">
+            <ul class="menu" id="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#giveaway">Giveaway</a></li>
@@ -72,22 +72,25 @@
                     <div class="card">
                         <img src="/assets/images/boys.png" alt="Card 1">
                         <h3>Who are we?</h3>
-                        <p>We are a local artisan bakery, that specializes in sourdough, fresh baked good and delicious coffee</p>
+                        <p>We are a local artisan bakery, that specializes in sourdough, fresh baked good and delicious
+                            coffee</p>
                     </div>
                     <div class="card">
                         <img src="/assets/images/plate.png" alt="Card 1">
                         <h3>Where do our ingredients come from?</h3>
                         <p>We use fresh, local Danish ingredients, bread baked daily and coffee roasted in Denmark</p>
-                    </div> 
+                    </div>
                     <div class="card">
                         <img src="/assets/images/giveaway-img2.png" alt="Card 1">
                         <h3>What's our story?</h3>
-                        <p>Two friends met in a bakery class, sparked a friendship and turned into a thriving business</p>
+                        <p>Two friends met in a bakery class, sparked a friendship and turned into a thriving business
+                        </p>
                     </div>
                     <div class="card">
                         <img src="/assets/images/coffee.png" alt="Card 1">
                         <h3>What's our mission?</h3>
-                        <p>To bake fresh, delicious sourdough and serve great coffee using the best local ingredients</p>
+                        <p>To bake fresh, delicious sourdough and serve great coffee using the best local ingredients
+                        </p>
                     </div>
                     <div class="card">
                         <img src="/assets/images/sweets.png" alt="Card 1">
@@ -148,7 +151,7 @@
             <footer>
                 <div class="center-wrap-footer">
                     <iframe
-                        src="https://www.google.com/maps?q=Sankt+Clemens+Str%C3%A6de+7,+8000+Aarhus&z=15&output=embed"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.011753284614!2d10.208193999999999!3d56.156901399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3f96b2d35369%3A0x371e39e954e3095e!2sSankt%20Clemens%20Str%C3%A6de%207%2C%208000%20Aarhus!5e0!3m2!1sen!2sdk!4v1758527609499!5m2!1sen!2sdk"
                         width="240" height="240" style="border:0;border-radius:10px;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
@@ -156,6 +159,15 @@
             </footer>
         </section>
     </main>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const menu = document.getElementById("menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            menu.classList.toggle("show");
+        });
+    </script>
 </body>
 
 </html>
