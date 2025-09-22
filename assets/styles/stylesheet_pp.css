@@ -20,6 +20,18 @@ html, body {
   z-index: -1;
 }
 
+.center-wrap-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.back-to-home-btn {
+  color: white;
+  
+}
+
 /* color overlay */
 .overlay {
   position: fixed;

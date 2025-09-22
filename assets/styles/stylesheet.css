@@ -108,7 +108,7 @@ nav a:hover {
   flex-direction: column;
   background: #333;
   position: absolute;
-  top: 60px; /* adjust to your nav height */
+  top: 55px;
   right: 0;
   left: 0;
   text-align: center;
@@ -252,7 +252,6 @@ nav a:hover {
   font-family: "Lexend Deca", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-
 }
 
 .giveaway-container {
@@ -264,13 +263,25 @@ nav a:hover {
   height: calc(100vh - 500px);
 }
 
+h3.privacy-policy {
+  
+  margin-bottom: 0;
+}
+.privacy-policy {
+  cursor: pointer;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 .giveaway-images img {
   width: 50%;
   object-fit: cover;
 }
 
 .sign-up-container {
-  padding: 40px;
+  padding: 40px 40px 10px 40px;
 }
 
 #contact-us {
