@@ -183,7 +183,11 @@ nav a:hover {
 
 .about-us-gallery {
   background-color: #fff;
-  height: 220px;
+  height: auto;
+  min-width: 2;
+  display: flex;
+  gap: 20%;
+  padding: 7% 10% 7% 10%;
 }
 
 .giveaway-title {
@@ -338,4 +342,12 @@ footer {
 
 .subscribe-btn:hover {
   background-color: #666;
+}
+
+.about-us-gallery img {
+  height: 40%;
+  width: 40%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
 }
