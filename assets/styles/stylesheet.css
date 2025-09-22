@@ -11,7 +11,6 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-
 }
 
 .bg {
@@ -140,10 +139,9 @@ nav a:hover {
   background: #fff;
   border-radius: 2px;
   transition: all 0.4s ease;
-  transform-origin: center; /* pivot from center */
+  transform-origin: center;
 }
 
-/* When menu is active */
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(6px, 7px);
 }
@@ -174,7 +172,7 @@ nav a:hover {
 
 .homepage-title {
   color: white;
-  font-size: 32px;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
@@ -198,9 +196,8 @@ nav a:hover {
 }
 
 .open-sign h1 {
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: bold;
-
 }
 
 .divider {
@@ -212,14 +209,14 @@ nav a:hover {
 
 .open-sign p {
   margin: 5px 0;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 /* About us */
 .aboutus-title {
   background-color: white;
   padding: 30px;
-  font-size: 32px;
+  font-size: 2rem;
   margin: 0px;
 }
 
@@ -240,14 +237,14 @@ nav a:hover {
 .giveaway-title {
   color: white;
   padding: 30px;
-  font-size: 32px;
+  font-size: 2rem;
   margin: 0px;
 }
 
 .giveaway-text {
   color: white;
   padding: 0 30px;
-  font-size: 18px;
+  font-size: 1.125rem;
   margin: 0px;
   font-family: "Lexend Deca", sans-serif;
   font-optical-sizing: auto;
@@ -255,7 +252,7 @@ nav a:hover {
 }
 
 section {
-  scroll-margin-top: 58px; /* replace 80px with your header height */
+  scroll-margin-top: 58px;
 }
 
 .instagram-logo {
@@ -272,9 +269,10 @@ section {
 }
 
 h3.privacy-policy {
-  
+
   margin-bottom: 0;
 }
+
 .privacy-policy {
   cursor: pointer;
   color: white;
@@ -298,7 +296,7 @@ h3.privacy-policy {
 
 .contact-us-title {
   color: white;
-  font-size: 32px;
+  font-size: 2rem;
   padding-top: 36px;
 }
 
@@ -311,7 +309,7 @@ iframe {
 
 .contact-us-subtitle {
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem;
   margin: 50px;
 }
 
@@ -327,7 +325,7 @@ iframe {
 
 .location-container {
   position: relative;
-  background: url("/assets/images/location-img.jpg") no-repeat center center;
+  background: url("/assets/images/location-img_copy.jpg") no-repeat center center;
   background-size: cover;
   min-height: 488px;
   display: flex;
@@ -352,7 +350,6 @@ footer {
 }
 
 /* giveaway */
-
 .signup-form {
   background-color: #5C6159;
   padding: 20px;
@@ -369,9 +366,8 @@ footer {
 }
 
 .signup-form p {
-  font-size: 14px;
+  font-size: 1rem;
   margin-bottom: 20px;
-
 }
 
 .form-group {
@@ -388,7 +384,7 @@ footer {
 }
 
 .input-wrapper .icon {
-  font-size: 18px;
+  font-size: 1.125rem;
   margin-right: 8px;
   color: #555;
 }
@@ -397,7 +393,7 @@ footer {
   border: none;
   outline: none;
   flex: 1;
-  font-size: 14px;
+  font-size: 1rem;
   padding: 8px 0;
 }
 
@@ -418,7 +414,6 @@ input {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-
 }
 
 .subscribe-btn:hover {
@@ -469,15 +464,7 @@ input {
   color: #666;
 }
 
-/* Mobile: make cards smaller */
-@media (max-width: 768px) {
-  .card {
-    flex: 0 0 80%;
-  }
-}
-
-/* Privacy Policy Page Styles */
-.privacy-page h1, 
+.privacy-page h1,
 .privacy-page p {
   text-align: center;
   margin-left: 15%;
@@ -504,7 +491,6 @@ input {
   min-height: calc(100vh - 62px);
 }
 
-/* Enhanced overlay for privacy page */
 .overlay.privacy-overlay {
   position: fixed;
   top: 0;
@@ -513,5 +499,23 @@ input {
   height: 100%;
   background: rgba(60, 47, 47, 0.5);
   z-index: 0;
-  pointer-events: none; /* don't block clicks */
+  pointer-events: none;
+}
+
+/* DESKTOP NAVIGATION */
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none; /* hide burger on desktop */
+  }
+
+  .menu {
+    margin-left: auto;
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    background: transparent;
+    gap: 3rem;
+    padding: 0 50px 0 0;
+    text-transform: uppercase;
+  }
 }
