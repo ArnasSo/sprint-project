@@ -7,6 +7,9 @@ body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .bg {
@@ -137,6 +140,7 @@ nav a:hover {
 .homepage-title {
   color: white;
   font-size: 32px;
+  text-transform: uppercase;
 }
 
 .open-hours-sign {
@@ -161,6 +165,11 @@ nav a:hover {
 .open-sign h1 {
   font-size: 2em;
   font-weight: bold;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
 }
 
 .divider {
