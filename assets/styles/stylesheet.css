@@ -349,6 +349,10 @@ footer {
   min-height: 100%;
 }
 
+.policy-wrap {
+  min-height: auto;
+}
+
 /* giveaway */
 .signup-form {
   background-color: #5C6159;
@@ -500,6 +504,11 @@ input {
   background: rgba(60, 47, 47, 0.5);
   z-index: 0;
   pointer-events: none;
+}
+
+.back-to-home-btn {
+  color: white;
+  text-decoration: none;
 }
 
 /* DESKTOP NAVIGATION */
