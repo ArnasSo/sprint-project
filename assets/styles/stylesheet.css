@@ -190,9 +190,10 @@ nav a:hover {
 
 .about-us-gallery {
   background-color: #fff;
-  height: auto;
   min-width: 2;
+  min-height: 200px;
   display: flex;
+  align-items: center;
   gap: 20%;
   padding: 7% 10% 7% 10%;
 }
