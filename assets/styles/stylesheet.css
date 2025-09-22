@@ -1,6 +1,7 @@
 /*-- Mobile First CSS --*/
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -20,7 +21,8 @@ html, body {
   z-index: -1;
 }
 
-header, main {
+header,
+main {
   position: relative;
 }
 
@@ -28,7 +30,10 @@ main {
   padding-top: 58px;
 }
 
-#home, #about-us, #giveaway, #contact-us {
+#home,
+#about-us,
+#giveaway,
+#contact-us {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,61 +41,63 @@ main {
 
 #home .overlay {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(60, 47, 47, 0.5);
   z-index: 1;
 }
 
-#home > * {
+#home>* {
   position: relative;
   z-index: 2;
 }
 
-#about-us > * {
+#about-us>* {
   position: relative;
   z-index: 2;
 }
 
-#giveaway > * {
+#giveaway>* {
   position: relative;
   z-index: 2;
 }
 
 nav {
-    background-color: #3C2F2F;
-    height: 58px;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    z-index: 1000;
-    top: 0;
-    width: 100%;
+  background-color: #3C2F2F;
+  height: 58px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
 }
 
 nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .nav-icon img {
-    height: 48px;
-    width: 48px;
-    cursor: pointer;
-    padding: 5px;
+  height: 48px;
+  width: 48px;
+  cursor: pointer;
+  padding: 5px;
 }
 
 /* hamburger icon */
@@ -117,19 +124,19 @@ nav a:hover {
 }
 
 .home-page-center-logo img {
-    display: block;
-    margin: 0 auto;
-    max-width: 170px;
-    height: 170px;
+  display: block;
+  margin: 0 auto;
+  max-width: 170px;
+  height: 170px;
 }
 
 .center-wrap {
-    text-align: center;
+  text-align: center;
 }
 
 .homepage-title {
-    color: white;
-    font-size: 32px;
+  color: white;
+  font-size: 32px;
 }
 
 .open-hours-sign {
@@ -140,32 +147,32 @@ nav a:hover {
 }
 
 .open-sign {
-    background-color: rgba(60, 47, 47, 0.7);
-    color: white;
-    text-align: center;
-    padding: 0px 20px 20px 20px;
-    border: 2px solid white;
-    border-radius: 10px;
-    backdrop-filter: blur(4px);
-    width: 170px;
-    height: 120px;
+  background-color: rgba(60, 47, 47, 0.7);
+  color: white;
+  text-align: center;
+  padding: 0px 20px 20px 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  width: 170px;
+  height: 120px;
 }
 
 .open-sign h1 {
-    font-size: 2em;
-    font-weight: bold;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .divider {
-    height: 1px;
-    background: white;
-    margin: 10px auto;
-    width: 60%;
+  height: 1px;
+  background: white;
+  margin: 10px auto;
+  width: 60%;
 }
 
 .open-sign p {
-    margin: 5px 0;
-    font-size: 1.1em;
+  margin: 5px 0;
+  font-size: 1.1em;
 }
 
 /* About us */
@@ -278,10 +285,10 @@ footer {
 }
 
 .center-wrap-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
 }
 
 /* giveaway */
