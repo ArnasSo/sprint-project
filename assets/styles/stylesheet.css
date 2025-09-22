@@ -218,6 +218,11 @@ nav a:hover {
   padding: 0 30px;
   font-size: 18px;
   margin: 0px;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
 }
 
 .giveaway-container {
@@ -318,6 +323,11 @@ footer {
 .signup-form p {
   font-size: 14px;
   margin-bottom: 20px;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
 }
 
 .form-group {
@@ -405,6 +415,11 @@ footer {
   margin: 0;
   font-size: 0.95rem;
   color: #666;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
 }
 
 /* Mobile: make cards smaller */
