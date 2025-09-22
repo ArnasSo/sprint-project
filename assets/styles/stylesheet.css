@@ -252,7 +252,14 @@ nav a:hover {
   font-family: "Lexend Deca", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
 
+section {
+  scroll-margin-top: 58px; /* replace 80px with your header height */
+}
+
+.instagram-logo {
+  z-index: 2;
 }
 
 .giveaway-container {
